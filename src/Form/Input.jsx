@@ -5,14 +5,17 @@ const MyInput = styled.input`
 font-size: 18px;
 padding: 10px 10px 10px 5px;
 display: block;
-width: 300px;
+width: 500px;
+height: 40px;
 border: none;
-border-bottom: 1px solid #757575;
+border-radius: 30px;
+box-shadow: 0px 0px 10px #8267BE;
 padding:20px
-:focus {
+background-color: transparent;
+:focus{
     outline: none;
 }
-padding-left:40px
+padding-left:50px
 
 `;
 
@@ -25,13 +28,15 @@ const Icon = styled.img`
 width: 30px;
 height: 30px;
 position: absolute;
+left: 10px;
+top: 20%;
 `;
 
-function Input({icon, placeholder}) {
+function Input({icon, placeholder,type}) {
     return (
         <Inputcontainer>
             <Icon src={icon} alt="icon" />
-            <MyInput type="text"  placeholder={placeholder} />
+            <MyInput type="text" placeholder={placeholder}type={type} />
         </Inputcontainer>
     )
 }
