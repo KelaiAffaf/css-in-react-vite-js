@@ -59,7 +59,13 @@ function Form(props) {
         <h2>Sign Up</h2>
       </div>
       <InputContainer className="input-container">
-        <Input icon={profile} placeholder="Name" type="text" />
+        <Input icon={profile} placeholder="Name" type="text" /> 
+        {/* 
+          <Inputcontainer>
+            <Icon src={profile} alt="icon" />
+            <MyInput type="text" placeholder="Name" type="text" />
+        </Inputcontainer>
+        */}
         <Input icon={email} placeholder="email" type="email" />
         <Input icon={padlock} placeholder="password" type="password" />
 
