@@ -5,13 +5,15 @@ import React from 'react'
 
 
 
-function child({name,age, handelevent}) {
-    let lastName="kelai"
+function child(props) {
+    const notPropfunction =()=>{
+        props.handelevent(props.name);
+    }
     return (
         <div>
-            <h1>{name}</h1>
-            <h2>{age}</h2>
-            <button onClick={handelevent}>click</button>
+            <h1>{props.name}</h1>
+            <h2>{props.age}</h2>
+            <button onClick={notPropfunction}>click</button>
         </div>
     )
 }
